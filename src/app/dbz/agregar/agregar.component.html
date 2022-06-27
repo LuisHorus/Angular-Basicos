@@ -1,0 +1,25 @@
+<h3>Agregar</h3>
+        <hr>
+        <form (ngSubmit)="agregar()" action="">
+            <input 
+                type="text" 
+                placeholder="Nombre"
+                name="nombre"
+                [(ngModel)]="nuevo.nombre"
+            />
+            <!--![] Se establecePropiedad al Objeto-->
+            <!--!() Se establece Evento al objeto-->
+            <!--TODO [()]Emite y recibe eventos ó propiedades-->
+            <!--*
+                [value]="nuevo.nombre" 
+                (input)="cambiarNombre($event)"
+                Forma Tardada y basica
+            -->
+            <input 
+                type="number" 
+                placeholder="Poder"
+                name="poder"
+                [(ngModel)]="nuevo.poder"
+            />
+            <button type="submit">Agregar</button>
+        </form>
